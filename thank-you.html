@@ -9,7 +9,14 @@
       gtag('js', new Date());
 
       gtag('config', 'AW-17741949013');
-      
+
+      // Form submission conversion tracking
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17741949013/ytUvCIej9JAcENXQgoxC',
+          'value': 1.0,
+          'currency': 'USD'
+      });
+
       // Click-to-call conversion tracking
       function gtag_report_conversion(url) {
         var callback = function () {
